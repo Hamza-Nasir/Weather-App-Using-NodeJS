@@ -1,7 +1,3 @@
-console.log("Client side JS File!");
-
-
-
 const weatherForm = document.querySelector('form');
 const msg1 = document.getElementById('message-1');
 const msg2 = document.getElementById('message-2');
@@ -15,7 +11,7 @@ weatherForm.addEventListener('submit', (e) => {
     const input = document.querySelector('input').value;
     
 
-    const url = `http://localhost:3000/weather?address=${input}`;
+    const url = `/weather?address=${input}`;
     msg1.textContent = "From JavaScript";
     msg2.textContent = "Fetching data...";
 
